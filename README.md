@@ -104,18 +104,43 @@ with open(file_to_load) as election_data:
 
         # 5: Add a vote to that county's vote count.
         county_votes[county_name] += 1
-        
-        ```
 
-![image](Resources/Screenshots/candidate_county_vote_totals_code_snapshot.png)
+```
 
 Code to calculate number/% of votes each candidate received, as well as find the winner:
 
-![image](Resources/Screenshots/candidate_code_snapshot.png)
+```python
+for candidate_name in candidate_votes:
+        # Retrieve vote count and percentage.
+        votes = candidate_votes.get(candidate_name)
+        vote_percentage = float(votes) / float(total_votes) * 100
+        candidate_results = (
+            f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        # Print each candidate's voter count and percentage to the terminal.
+        print(candidate_results)
+        # Determine winning vote count, winning percentage, and candidate.
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_candidate = candidate_name
+            winning_percentage = vote_percentage
+```
 
 Code to calculate number/% of votes each county, as well as find the county with the largets voter turnout:
 
-![image](Resources/Screenshots/largest_county_code_snapshot.png)
+```python
+for county_name in county_votes:
+        # Retrieve the county vote count.
+        cvotes = county_votes.get(county_name)
+        # Calculate the percentage of votes for the county.
+        cvote_percentage = float(cvotes) / float(total_votes) * 100
+        county_results = (f"{county_name}: {cvote_percentage:.1f}% ({cvotes:,})\n")
+        # Print the county results to the terminal.
+        print(county_results)
+        # Write an if statement to determine the winning county and get its vote count.
+        if(cvotes > largest_county_votes): 
+            largest_county_votes = cvotes
+            largest_county = county_name
+```
 
 ### Election Audit Summary
 One way to modify this script to be used for other elections would be to add variables for additional demographics of voters - for example, if the data included age and gender of voters, you could modify the code to find the number/% of votes based on those criteria.
