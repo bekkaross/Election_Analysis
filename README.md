@@ -47,7 +47,7 @@ The analysis of the election show that:
 
 Looping through each row of the csv file, total votes were calculated by adding 1 to the total vote counter (initially set to zero).  The candidate and county names were found by adding each name to a list (given that the name did not already exist in the list).  The number of votes were tallied by adding one to each candidate/county name in each row. 
 
-![image](Resources/Screenshots/candidate_county_vote_totals_code_snapshot.png".png)
+![image](Resources/Screenshots/candidate_county_vote_totals_code_snapshot.png)
 
 Code to calculate number/% of votes each candidate received, as well as find the winner:
 
