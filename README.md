@@ -12,7 +12,7 @@ The purpose of this election audit was to analyze the results of a recent local 
 ## Resources
 Data Source: election_results.csv
 
-![image](https://user-images.githubusercontent.com/95199679/148712940-6bc25bb5-4000-4606-b2bc-0508604a82f1.png)
+![image](Resources/Screenshots/election_results_csv_snapshot.png)
 
 Software: Python 3.7.6, Visual Studio Code 1.63.2
 
