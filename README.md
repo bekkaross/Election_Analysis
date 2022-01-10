@@ -1,7 +1,13 @@
 # Election_Analysis
 
-## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+## Challenge Overview
+### Overview of Election Audit
+The purpose of this election audit was to analyze the results of a recent local congressional election that included a voter's ballot ID, the county in which they voted, and the candidate they voted for, and find the following:
+- The total number of votes cast in the election.
+- The number of votes and % of total votes cast in each county in the election.
+- The county that had the largest turnout of voters in the election.
+- The number of votes and % of total votes each candidate received in the election. 
+- The winner of the election based on popular vote, as well as the number and percentage of votes they received.
 
 ## Resources
 Data Source: election_results.csv
@@ -9,15 +15,6 @@ Data Source: election_results.csv
 ![image](https://user-images.githubusercontent.com/95199679/148712940-6bc25bb5-4000-4606-b2bc-0508604a82f1.png)
 
 Software: Python 3.7.6, Visual Studio Code 1.63.2
-
-## Challenge Overview
-### Overview of Election Audit
-The purpose of this election audit was to analyze election results that included a voter's ballot ID, the county in which they voted, and the candidate they voted for, and find the following:
-- The total number of votes cast in the election.
-- The number of votes and % of total votes cast in each county in the election.
-- The county that had the largest turnout of voters in the election.
-- The number of votes and % of total votes each candidate received in the election. 
-- The winner of the election based on popular vote, as well as the number and percentage of votes they received.
 
 ## Challenge Summary
 ### Election Audit Results
